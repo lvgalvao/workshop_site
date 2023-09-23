@@ -1,0 +1,80 @@
+{% extends "bootstrap/base.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+
+    <!-- Quem sou eu -->
+    <section id="quemsoueu" class="text-center">
+        <h1>Sobre Mim</h1>
+        <p class="lead">Olá! Sou [Seu Nome]. Um apaixonado por tecnologia e especialista em ciência de dados. Junte-se a
+            mim nesta jornada de aprendizado!</p>
+    </section>
+
+    <!-- Cabeçalho com Chamada para Ação -->
+    <section id="header" class="text-center py-5">
+        <h1>Eleve Seus Projetos de Dados ao Próximo Nível</h1>
+        <p>Descubra ferramentas e técnicas que transformarão sua carreira.</p>
+        <a href="#inscrever" class="btn btn-light btn-lg mt-4">Quero Me Inscrever!</a>
+    </section>
+
+    <!-- Se Inscrever -->
+    <section id="inscrever" class="text-center py-5">
+        <h2>Reserve Seu Lugar</h2>
+        <p class="lead">Evento online com vagas limitadas. Sua oportunidade de transformação está aqui!</p>
+    </section>
+
+    <!-- Conteúdo -->
+    <section id="conteudo" class="text-center py-5">
+        <h2>O Que Você Vai Aprender?</h2>
+        <ul class="pl-3">
+            <li>✓ Estruturar projetos de dados do zero.</li>
+            <li>✓ Criar um ambiente de desenvolvimento perfeito com Docker.</li>
+            <li>✓ Dominar produtos de dados: ETL, Modelo, DataQuality e mais.</li>
+            <li>✓ Organizar projetos eficientemente: Src, tests, docs.</li>
+            <li>✓ Escrever testes unitários com Pytest.</li>
+            <li>✓ Utilizar Git e Github Actions para CI/CD.</li>
+            <li>✓ Documentar seus projetos com Sphinx.</li>
+            <li>✓ Automatizar fluxos de trabalho com Bash e Docker.</li>
+        </ul>
+    </section>
+
+    <!-- Data -->
+    <section id="data" class="text-center py-5">
+        <h2>Quando?</h2>
+        <p class="lead">7 de Outubro | 6 Horas de Imersão</p>
+    </section>
+
+    <!-- Local -->
+    <section id="local" class="text-center py-5">
+        <h2>Onde?</h2>
+        <p class="lead">100% Online. Aprenda de qualquer lugar!</p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="text-center py-5">
+        <h2>Dúvidas?</h2>
+        <p class="lead">Estamos aqui para ajudar! Entre em contato e nossa equipe te auxiliará.</p>
+    </section>
+
+    <!-- Rodapé com Chamada para Ação -->
+    <section id="footer" class="text-center py-5">
+        <h3>Transforme Sua Carreira em Dados. Comece Agora!</h3>
+        <a href="#inscrever" class="btn btn-light btn-lg mt-4">Inscreva-se</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <h4>Conecte-se Comigo</h4>
+        <p>
+            <a href="https://linkedin.com/in/seuperfil" target="_blank" class="text-light mr-3">LinkedIn</a> |
+            <a href="https://github.com/seuusername" target="_blank" class="text-light ml-3 mr-3">GitHub</a> |
+            <a href="mailto:seuemail@example.com" class="text-light ml-3">Email</a>
+        </p>
+    </footer>
+</div>
+
+{% endblock %}
